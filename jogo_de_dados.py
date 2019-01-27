@@ -14,17 +14,17 @@ print('Jogo de Dados')
 print('Test sua sorte')
 
 while True:
-    numero = int(input('Escolha um numero entre 1 e 6: '))
+    numero = int(input('\nEscolha um numero entre 1 e 6: '))
     dado = randint(1, 6)
     if dado == numero:
-        print('Parabéns, saiu o seu número no dado!')
+        print('\n\nParabéns, saiu o seu número no dado!')
         print('O número sorteado foi: ', str(dado),' e o número que você escolheu foi: ', str(numero))
     else:
-        print('Não foi dessa vez :')
+        print('\n\nNão foi dessa vez :')
         print('O número sorteado foi: ', str(dado),' e o número que você escolheu foi: ', str(numero) )
 
-    print('Deseja tentar a sorte novamente?')
-    continuar = input('Digite C para Continuar ou N para Sair:')
+    print('\n\nDeseja tentar a sorte novamente?')
+    continuar = input('\nDigite C para Continuar ou N para Sair:')
 
     if continuar == 'S' or continuar == 'n':
         break
